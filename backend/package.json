@@ -1,0 +1,49 @@
+{
+  "name": "xrpl-sample",
+  "version": "1.0.0",
+  "description": "Demo: connect to the XRPL and sign + submit a transaction",
+  "scripts": {
+    "lint": "eslint"
+  },
+  "author": "Wietse Wind <hi@wietse.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "debug": "^4.3.4",
+    "localstorage": "^1.0.1",
+    "verify-xrpl-signature": "^0.4.0",
+    "xrpl": "^2.3.1",
+    "xrpl-accountlib": "^1.1.4",
+    "xrpl-client": "^1.7.0",
+    "xrpl-txdata": "^1.2.1",
+    "xumm-oauth2-pkce": "^2.0.3",
+    "xumm-sdk": "^1.3.4"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "keywords": [
+    "xrp",
+    "xrpl",
+    "ledger",
+    "websocket",
+    "ws",
+    "client"
+  ],
+  "nodemonConfig": {
+    "ignore": [
+      "test/*"
+    ],
+    "delay": 750
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^12.12.55",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "typescript": "^4.1.0"
+  }
+}
